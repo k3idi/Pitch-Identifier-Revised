@@ -6,7 +6,7 @@ The purpose of this device is to identify which pitches are prevalent when a not
 The identified pitch or harmony can be displayed on the LCD.
 You can also play notes using the buzzer.
 
-![Pitch Identifier Revised](media/BOARD_W_DISPLAY.PNG)
+![Pitch Identifier Revised](media/PITCH_IDENTIFIER_REVISED.jpg)
 
 ### Sections of the PCB
 
