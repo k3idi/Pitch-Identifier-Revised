@@ -19,7 +19,7 @@ The design schematic and PCB files can be found [here](https://github.com/k3idi/
 Once the device has been programmed, it will mostly be supplied by batteries, because I want to be able to carry it around and use it without a socket nearby or a power bank in my pocket.
 There is a connector for the batteries (J2), a circuit to monitor the combined voltage level of the batteries (U2 and C7) and a voltage regulator to shift the input voltage to 3.3V.
 The voltage regulator (U3) circuit also includes decoulping capacitors (C8, C9) and an inductor (L1).
-There are also an ESD protection diode for the incoming raw battery supply (D3) and a decoupling capacitor (C6).
+There is also an ESD protection diode for the incoming raw battery supply (D3) and a decoupling capacitor (C6).
 
 #### 2. UPDI interface
 
@@ -55,8 +55,8 @@ This MCU has two very useful features.
 First, it has built-in op-amps that can be configured as inverting amplifiers and cascaded.
 In this configuration, they can be used as the microphone's amplifier.
 The inverting amplifiers' amplification can be controlled through software.
-Second, it has three separate power supplies, regular VDD, AVDD (analog VDD, which was actually internally connected to VDD) and VDDIO, which allowed 8 IO pins to be used at a different voltage level than VDD.
-This was useful, because while most of the components required 3.3V, then the LCD required 5V.
+Second, it has three separate power supplies, regular VDD, AVDD (analog VDD, which is actually internally connected to VDD) and VDDIO, which allows 8 IO pins to be used at a different voltage level than VDD.
+This was useful, because while most of the components required 3.3V, the LCD required 5V.
 Thanks to these IO pins, I didn't have to use a logic level shifter.
 
 #### 7. Buttons
